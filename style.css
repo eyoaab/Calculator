@@ -1,0 +1,160 @@
+:root{
+    --primarycolor:#304452;
+}
+.dark-theme{
+    --secondarycolor:black;
+}
+
+.conteiner{
+    width:100%;
+    height:100vh;
+    background-color: #e3f9ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;}
+.calculetor{
+    background: var(--primarycolor);
+    padding:2%;
+    border-radius: 1em;
+    height:100vh;
+
+}
+.calculetor form input{
+    outline:0;   
+    width:3em;
+    height:3em;
+    border: 10px;
+    box-shadow:-8px -8px 15px rgba(255,255,255,0.1),5px 5px 15px rgba(0,0,0,0.2) ;
+    background: transparent;
+    font-size: 1.3em;
+    cursor: pointer;
+    color:#fff;
+    margin:.5em;
+    border-radius:.7em;}
+form .display{
+    display: flex;
+    justify-content: flex-end;
+    align-items: end;
+    margin:.0em 0;
+    height: 32vh;   
+}
+form .display input{
+    text-align: right;
+    flex:1;
+    font-size: 45px;
+    box-shadow: none;
+    display: flex;
+    flex-flow: row;
+    align-items: end;
+    justify-content: end;
+    margin-bottom: 0;
+    padding-bottom: 0;
+
+}
+/* .conteiner button .button{
+    margin-top:15px;
+    margin-right:14px;
+    width:50px;
+    height:50px;
+    border:2px solid red;
+} */
+form input.equal{
+    width:7em;
+    color:#33ffd8;
+
+}
+form input.oprator{
+    color:#33ffd8;
+}
+@media screen and (max-width: 400px) {
+    
+    .conteiner {
+        padding-top: 0px;
+        margin-top: 0;
+        -ms-flex-align: end;
+        height:100vh;
+        justify-content: center;
+        
+    }
+  
+   .conteiner .calculetor{    
+         width: 100%;
+         height: 100%;
+         padding-left: 1em;
+         margin-top: 2em;
+    }
+    .calculetor form input{
+        outline:0;   
+        width:2.9em;
+        height:2.9em;
+        border: 5px;
+        font-size: 1.3em;
+        margin:.5em;
+        border-radius:.5em;}
+    form .display{       
+            margin-right: 2em;
+            font-size:1.5em;     
+        } 
+    form{
+            margin: 0px;
+        }
+    .calculetor{
+         margin-top: 0px;}
+        form input.equal{
+            width:6.5em;
+            color:#33ffd8;
+        
+        }
+   } 
+   @media screen and (max-width: 375px) {
+    .calculetor form input{
+        width:2.4em;
+        height:2.5em;
+        font-size: 1.2em;
+        margin:.5em;
+        border-radius:.5em;}
+        form input.equal{
+            width:6em;
+        }
+        .conteiner {
+            height:80vh;
+        }
+}
+   @media screen and (max-width: 340px) {
+    .calculetor form input{
+        width:2.5em;
+        height:2.5em;
+        font-size: 1.2em;
+        margin:.5em;
+        border-radius:.5em;}
+        form input.equal{
+            width:6em;
+        }
+        .conteiner {
+            height:80vh
+        }
+}
+
+@media screen and (max-width: 325px) {
+    .calculetor form input{
+        width:2.4em;
+        height:2.4em;
+        font-size: 1.18em;
+        margin:.5em;
+        border-radius:.4em;}
+        form input.equal{
+        width:5.5em;
+        }
+        .conteiner {
+            height:110vh;
+            margin-bottom: 0;
+            padding-bottom: 0;
+            border: #1a2221 1px solid;
+        }
+        form{
+            height:70vh;
+            margin-bottom: 0;
+            padding-bottom: 0; 
+        }
+}
+
