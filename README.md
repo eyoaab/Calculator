@@ -1,1 +1,1 @@
-ti see the page [click here](https://eyoaab.github.io/Calculator)
+to see the page [click here](https://eyoaab.github.io/Calculator)
